@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>April Chomlack | Real Estate Chilliwack &amp; Fraser Valley</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2F3E46", 
+                        "accent": "#C5A059", 
+                        "charcoal": "#1A1D1F",
+                        "background-light": "#FDFDFD",
+                    },
+                    fontFamily: {
+                        "sans": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .icon-filled {
+            font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 24;
+        }
+    </style>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-sans bg-background-light text-slate-900 antialiased">
+<header class="sticky top-0 z-50 glass-effect border-b border-primary/5 px-6 py-4 lg:px-10 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xl">real_estate_agent</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-serif text-lg font-bold leading-none text-primary tracking-tight">April Chomlack</h1>
+<p class="text-[9px] uppercase tracking-[0.2em] text-accent font-extrabold">Century 21 Creekside</p>
+</div>
+</div>
+<nav class="hidden lg:flex items-center gap-8 text-sm font-bold uppercase tracking-wide text-primary/80">
+<a class="hover:text-primary transition-colors" href="#home">Home</a>
+<a class="hover:text-primary transition-colors" href="#listings">Listings</a>
+<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="text-primary lg:hidden" id="menu-toggle" type="button">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</header>
+<div class="fixed inset-0 z-40 bg-black/20 hidden lg:hidden" id="mobile-menu-overlay"></div>
+<nav class="fixed top-[74px] left-4 right-4 z-50 hidden lg:hidden bg-white border border-primary/10 rounded-xl shadow-xl p-3 opacity-0 -translate-y-2 pointer-events-none transition duration-200 ease-out" id="mobile-menu">
+<a class="mobile-menu-link block px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wide text-primary hover:bg-slate-50" href="#home">Home</a>
+<a class="mobile-menu-link block px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wide text-primary hover:bg-slate-50" href="#listings">Listings</a>
+<a class="mobile-menu-link block px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wide text-primary hover:bg-slate-50" href="#reviews">Reviews</a>
+<a class="mobile-menu-link block px-4 py-3 rounded-lg text-sm font-bold uppercase tracking-wide text-primary hover:bg-slate-50" href="#contact">Contact</a>
+</nav>
+<main class="pb-0">
+<section class="relative bg-white px-6 py-12 lg:px-10 lg:py-20" id="home">
+<div class="max-w-6xl mx-auto flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-14 lg:items-center">
+<div class="relative pb-10">
+<div class="aspect-[4/5] lg:aspect-[4/4.8] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10">
+<img alt="April Chomlack Professional Portrait" class="w-full h-full object-cover" src="assets/images/april.jpg"/>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 -bottom-6 w-[92%] max-w-md glass-effect rounded-2xl border border-primary/10 border-t-2 border-t-accent/40 shadow-xl shadow-primary/10 px-4 py-3 grid grid-cols-3 gap-2">
+<div class="rounded-xl py-2 text-center hover:bg-white/60 transition flex flex-col items-center justify-center gap-1">
+<div class="flex items-center justify-center gap-0.5 leading-none">
+<span class="material-symbols-outlined icon-filled text-[11px] text-accent">star</span>
+<span class="material-symbols-outlined icon-filled text-[11px] text-accent">star</span>
+<span class="material-symbols-outlined icon-filled text-[11px] text-accent">star</span>
+<span class="material-symbols-outlined icon-filled text-[11px] text-accent">star</span>
+<span class="material-symbols-outlined icon-filled text-[11px] text-accent">star</span>
+</div>
+<p class="text-[11px] sm:text-xs font-extrabold text-primary">5-Star Rated</p>
+</div>
+<div class="rounded-xl py-2 text-center hover:bg-white/60 transition">
+<p class="text-[11px] sm:text-xs font-extrabold text-primary">Top 21</p>
+<p class="text-[9px] uppercase tracking-widest text-primary/50 font-bold">Creekside Office</p>
+</div>
+<div class="rounded-xl py-2 text-center hover:bg-white/60 transition">
+<p class="text-[11px] sm:text-xs font-extrabold text-primary">Local</p>
+<p class="text-[9px] uppercase tracking-widest text-primary/50 font-bold">Expert</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-7 lg:gap-8 lg:mt-0">
+<h2 class="font-serif text-[2.2rem] lg:text-6xl leading-[1.18] text-primary tracking-tight text-balance">Patient. Prepared. Stress-Free Real Estate in Chilliwack &amp; Fraser Valley.</h2>
+<p class="text-slate-500 text-lg lg:text-xl leading-relaxed font-light max-w-xl">Boutique service defined by strategy, integrity, and local expertise for every chapter of your home journey.</p>
+<div class="flex flex-col sm:flex-row gap-3.5">
+<a class="w-full sm:w-auto bg-primary text-white py-4 px-6 rounded-lg font-bold text-sm flex items-center justify-center gap-2 shadow-xl shadow-primary/20" href="#contact">
+                        Contact April
+                    </a>
+<a class="w-full sm:w-auto bg-white border border-primary/20 text-primary py-4 px-6 rounded-lg font-bold text-sm flex items-center justify-center gap-2" href="#valuation">
+                        Get Home Value
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-charcoal px-6 py-12 text-center border-y border-white/5 lg:px-10 lg:py-16">
+<div class="max-w-5xl mx-auto">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full border border-accent/30 mb-6 bg-primary/20">
+<span class="material-symbols-outlined text-accent text-4xl fill-1">military_tech</span>
+</div>
+<h3 class="text-accent font-bold tracking-[0.2em] text-xs mb-3 uppercase">Industry Excellence</h3>
+<h4 class="font-serif text-3xl text-white mb-4">Century 21 Creekside <span class="text-accent">Top 21</span></h4>
+<p class="text-slate-100 text-base leading-relaxed max-w-2xl mx-auto font-medium mb-5">
+            Consistently Recognized as a Top 21 Agent at Century 21 Creekside Realty Ltd.
+        </p>
+<div class="flex flex-wrap justify-center items-center gap-4 text-sm text-white/90 font-semibold mb-6">
+<span>September 2025</span>
+<span class="text-accent">•</span>
+<span>December 2025</span>
+<span class="text-accent">•</span>
+<span>April 2024</span>
+</div>
+<p class="text-[11px] tracking-wide uppercase text-slate-400 font-semibold mb-8">Based on Unit Sales within the Creekside office.</p>
+</div>
+</section>
+<section class="px-6 py-12 bg-white lg:px-10 lg:py-16">
+<div class="max-w-6xl mx-auto">
+<h3 class="font-serif text-3xl text-primary text-center mb-10">Heart | Home | Integrity</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-background-light rounded-2xl border border-primary/10 shadow-sm p-6 text-center">
+<span class="material-symbols-outlined text-accent text-4xl mb-3">favorite</span>
+<h4 class="font-serif text-2xl text-primary mb-2">Heart</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Client-first care with thoughtful support at every stage of your move.</p>
+</div>
+<div class="bg-background-light rounded-2xl border border-primary/10 shadow-sm p-6 text-center">
+<span class="material-symbols-outlined text-accent text-4xl mb-3">home</span>
+<h4 class="font-serif text-2xl text-primary mb-2">Home</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Local expertise across Chilliwack and the Fraser Valley market.</p>
+</div>
+<div class="bg-background-light rounded-2xl border border-primary/10 shadow-sm p-6 text-center">
+<span class="material-symbols-outlined text-accent text-4xl mb-3">verified_user</span>
+<h4 class="font-serif text-2xl text-primary mb-2">Integrity</h4>
+<p class="text-slate-600 text-sm leading-relaxed">Transparent guidance so you can make decisions with total confidence.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-12 bg-background-light lg:px-10 lg:py-16" id="valuation">
+<div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 lg:p-10 shadow-sm border border-slate-100">
+<h3 class="font-serif text-3xl text-primary mb-2">What Is Your Home Worth Today?</h3>
+<p class="text-slate-500 text-sm mb-8">Receive a custom market analysis delivered to your inbox within 24 hours.</p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4" id="valuation-form">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1 ml-1">Full Name</label>
+<input class="w-full h-12 px-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-accent/50 text-sm" name="fullName" placeholder="John Doe" required="" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1 ml-1">Email Address</label>
+<input class="w-full h-12 px-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-accent/50 text-sm" name="email" placeholder="john@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1 ml-1">Property Address</label>
+<input class="w-full h-12 px-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-accent/50 text-sm" name="address" placeholder="123 Chilliwack St." required="" type="text"/>
+</div>
+<button class="w-full md:col-span-2 bg-accent text-white py-4 rounded-lg font-bold text-sm mt-2 shadow-lg shadow-accent/20" type="submit">
+                    Get My Free Valuation
+                </button>
+</form>
+<p class="hidden mt-4 text-sm font-semibold text-primary" id="valuation-success">Thanks! April will reach out within 24 hours.</p>
+</div>
+</section>
+<section class="px-6 py-12 bg-white lg:px-10 lg:py-16" id="listings">
+<div class="max-w-6xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-serif text-3xl text-primary tracking-tight">Curated Listings</h3>
+<span class="w-12 h-px bg-accent/30"></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group bg-white rounded-2xl shadow-sm border border-primary/5 p-4">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 shadow-sm">
+<img alt="Luxury Chilliwack Property" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyHruvBQae_CPtLuYI5NMMJtR2jEeBlrmp2NdGLglqervcp1iDn2aze2kvHlv41kgW8YXdvaBnZCQ-Df8X0UEM5HDQ9g54AtvqJaxcOrZXogtbVPudv1DMZA4GjKzXgpiIkWqLAHRWuNVjrXwKO9fP9ktfJ6VY1jm-sb06KVKz2FioikT15rfvZX_cEEKhfgxG37gDJFnJwwCPL8LzHcKfYhXczi1XbCpaOd-rBivLY2dU0wzacLpUkyOVsEtF9-sWBNvvb1MuPg"/>
+<div class="absolute top-4 left-4 bg-primary/95 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest backdrop-blur-sm">Exclusive</div>
+</div>
+<h4 class="text-2xl font-bold text-primary">$1,249,000</h4>
+<p class="text-slate-500 text-sm mt-1 mb-4">4562 Garrison Blvd, Chilliwack</p>
+<div class="flex gap-6 text-slate-400 text-xs font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">bed</span> 4 Beds</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">bathtub</span> 3 Baths</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">square_foot</span> 2,850 SF</span>
+</div>
+<a class="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-accent transition-colors" href="https://april-chomlack.c21.ca/search#status=active&amp;sold_days=180&amp;pstatus=1%2C11&amp;ls_conversion=acres&amp;location_search_field=45428%20Luckakuck%20Way%2C%20Chilliwack%2C%20BC%20V2R%203S9%2C%20Canada&amp;drive_time=09%3A00&amp;drive_duration=15&amp;drive_avoid_ferry=1&amp;drive_departure=1&amp;ss_locale=en-CA&amp;ss_email_freq=40&amp;ss_send_zero_result=1&amp;center_lat=49.141348&amp;center_lon=-121.968026&amp;pgsize=20&amp;startidx=0&amp;sort_by=10&amp;company_uuid=3341197&amp;commute=0&amp;buffer_miles=0&amp;geospatial=true&amp;agent_uuid=25db18cd-b6c9-4a7c-95b0-2e1b72b9a1b6&amp;ptype=1%2C2%2C3%2C4%2C5%2C7%2C9%2C8&amp;searchType=criteria&amp;omit_hidden=true&amp;ex_pend=true&amp;currency=CAD" rel="noopener noreferrer" target="_blank">View Details <span class="material-symbols-outlined text-base">open_in_new</span></a>
+</div>
+<div class="group bg-white rounded-2xl shadow-sm border border-primary/5 p-4">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 shadow-sm">
+<img alt="Contemporary Lake Home" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNSd4gVqefgEw1z-RIP66I701AMdRX5U_ePzV18AWdgxZ0msnHxESrrgCpX4Mz9tJdc3zMIk_MKdDRGmrg90vBPaXg5xQq5_z05atOWdivDHaHG6JMJP9cYL6oQ56X6kfPgtQPJqqcsSUURBoGys-VL9hTimYkWKV-WmRNN-Yr0XLAEOnlM_zuRBQKz9pWc840Ip-qidRmOKQMnjVZQbkbf0IBrMuBcdWDeHHC8x8HPSJEyw68m_cW1U0or-msMKIthlIcj71CGA"/>
+</div>
+<h4 class="text-2xl font-bold text-primary">$899,000</h4>
+<p class="text-slate-500 text-sm mt-1 mb-4">789 Cultus Lake Rd, Chilliwack</p>
+<div class="flex gap-6 text-slate-400 text-xs font-medium">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">bed</span> 3 Beds</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">bathtub</span> 2 Baths</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">square_foot</span> 1,920 SF</span>
+</div>
+<a class="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-accent transition-colors" href="https://april-chomlack.c21.ca/search#status=active&amp;sold_days=180&amp;pstatus=1%2C11&amp;ls_conversion=acres&amp;location_search_field=45428%20Luckakuck%20Way%2C%20Chilliwack%2C%20BC%20V2R%203S9%2C%20Canada&amp;drive_time=09%3A00&amp;drive_duration=15&amp;drive_avoid_ferry=1&amp;drive_departure=1&amp;ss_locale=en-CA&amp;ss_email_freq=40&amp;ss_send_zero_result=1&amp;center_lat=49.141348&amp;center_lon=-121.968026&amp;pgsize=20&amp;startidx=0&amp;sort_by=10&amp;company_uuid=3341197&amp;commute=0&amp;buffer_miles=0&amp;geospatial=true&amp;agent_uuid=25db18cd-b6c9-4a7c-95b0-2e1b72b9a1b6&amp;ptype=1%2C2%2C3%2C4%2C5%2C7%2C9%2C8&amp;searchType=criteria&amp;omit_hidden=true&amp;ex_pend=true&amp;currency=CAD" rel="noopener noreferrer" target="_blank">View Details <span class="material-symbols-outlined text-base">open_in_new</span></a>
+</div>
+<div class="mt-4 text-center md:col-span-2">
+<a class="w-full max-w-xl mx-auto border-2 border-primary text-primary py-4 rounded-lg font-bold text-sm flex items-center justify-center gap-2" href="https://april-chomlack.c21.ca/search#status=active&amp;sold_days=180&amp;pstatus=1%2C11&amp;ls_conversion=acres&amp;location_search_field=45428%20Luckakuck%20Way%2C%20Chilliwack%2C%20BC%20V2R%203S9%2C%20Canada&amp;drive_time=09%3A00&amp;drive_duration=15&amp;drive_avoid_ferry=1&amp;drive_departure=1&amp;ss_locale=en-CA&amp;ss_email_freq=40&amp;ss_send_zero_result=1&amp;center_lat=49.141348&amp;center_lon=-121.968026&amp;pgsize=20&amp;startidx=0&amp;sort_by=10&amp;company_uuid=3341197&amp;commute=0&amp;buffer_miles=0&amp;geospatial=true&amp;agent_uuid=25db18cd-b6c9-4a7c-95b0-2e1b72b9a1b6&amp;ptype=1%2C2%2C3%2C4%2C5%2C7%2C9%2C8&amp;searchType=criteria&amp;omit_hidden=true&amp;ex_pend=true&amp;currency=CAD" target="_blank" rel="noopener noreferrer">
+                    Explore All Listings on Century 21
+                    <span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+<p class="text-[10px] text-slate-400 mt-2 uppercase tracking-widest font-bold">Always up to date on the brokerage site.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-12 bg-primary/5 lg:px-10 lg:py-16" id="reviews">
+<div class="max-w-6xl mx-auto">
+<h3 class="font-serif text-center text-xs text-accent font-bold uppercase tracking-[0.3em] mb-4">Success Stories</h3>
+<h4 class="font-serif text-3xl text-center text-primary mb-12">What My Clients Say</h4>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
+<span class="material-symbols-outlined text-accent text-5xl absolute -top-4 -left-2 opacity-10">format_quote</span>
+<p class="text-primary text-xl font-serif italic leading-relaxed mb-6">"She made the process extremely stress-free."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-xs">MC</div>
+<div>
+<p class="text-sm font-bold text-primary">— Mackenzie &amp; Cameron C.</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">First-Time Buyers</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
+<span class="material-symbols-outlined text-accent text-5xl absolute -top-4 -left-2 opacity-10">format_quote</span>
+<p class="text-primary text-xl font-serif italic leading-relaxed mb-6">"Incredibly patient and supportive through everything."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-xs">SK</div>
+<div>
+<p class="text-sm font-bold text-primary">— Sarah K.</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Seller</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm border border-primary/5 relative">
+<span class="material-symbols-outlined text-accent text-5xl absolute -top-4 -left-2 opacity-10">format_quote</span>
+<p class="text-primary text-xl font-serif italic leading-relaxed mb-6">"Very knowledgeable about the market dynamics."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center text-accent font-bold text-xs">JL</div>
+<div>
+<p class="text-sm font-bold text-primary">— James &amp; Lisa L.</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-wider font-bold">Relocation Clients</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-12 bg-white lg:px-10 lg:py-16" id="about">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-2 border-accent/20 p-1">
+<img alt="April Chomlack" class="w-full h-full object-cover rounded-full" src="assets/images/april.jpg"/>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="font-serif text-3xl text-primary">Meet April</h3>
+<p class="text-slate-600 leading-relaxed font-light">
+                With over a decade of experience in the Fraser Valley market, I've built my reputation on transparency, meticulous attention to detail, and a "client-first" philosophy. 
+            </p>
+<p class="text-slate-600 leading-relaxed font-light">
+                Whether you're looking for your first condo or a sprawling estate by the lake, I'm here to ensure your journey is as smooth as it is successful.
+            </p>
+<div class="pt-4 flex flex-col gap-1">
+<p class="font-bold text-primary text-lg">April Chomlack</p>
+<p class="text-xs text-accent font-bold uppercase tracking-widest">REALTOR® | Century 21 Creekside</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-12 bg-slate-50 border-t border-slate-100 lg:px-10">
+<div class="text-center">
+<h3 class="font-serif text-lg text-primary mb-4">Proudly Serving</h3>
+<div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2 text-sm font-medium text-slate-500 uppercase tracking-wide">
+<span>Chilliwack</span>
+<span class="text-accent">•</span>
+<span>Sardis</span>
+<span class="text-accent">•</span>
+<span>Promontory</span>
+<span class="text-accent">•</span>
+<span>Cultus Lake</span>
+<span class="text-accent">•</span>
+<span>Fraser Valley</span>
+</div>
+</div>
+</section>
+<section class="px-6 py-12 bg-white border-t border-slate-100 lg:px-10">
+<div class="max-w-6xl mx-auto bg-background-light rounded-2xl border border-primary/10 shadow-sm p-6 lg:p-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="rounded-xl overflow-hidden border border-primary/10 shadow-sm">
+<img alt="House key" class="w-full h-full object-cover" src="assets/images/house_key.png"/>
+</div>
+<div class="text-center md:text-left">
+<h3 class="font-serif text-3xl text-primary mb-3">Ready for Your Keys?</h3>
+<p class="text-accent uppercase tracking-[0.18em] text-xs font-bold mb-3">Heart | Home | Integrity</p>
+<p class="text-slate-600 leading-relaxed mb-6">Whether you're buying, selling, or planning your next move, April is here with clear advice and personalized support.</p>
+<a class="inline-flex w-full sm:w-auto items-center justify-center bg-primary text-white py-4 px-6 rounded-lg font-bold text-sm shadow-xl shadow-primary/20" href="#contact">Contact April</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="px-6 py-16 bg-white border-t border-slate-100 text-center lg:px-10" id="contact">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="material-symbols-outlined text-accent text-3xl">contact_support</span>
+<div class="space-y-1 md:text-left">
+<p class="text-primary font-bold text-lg">604-555-0123 (Placeholder)</p>
+<p class="text-slate-500 text-sm">april@chomlackrealestate.com</p>
+<p class="text-slate-500 text-sm">Office Address Placeholder, Chilliwack, BC</p>
+</div>
+</div>
+<div class="flex justify-center gap-8">
+<a aria-label="Instagram" class="text-primary/40 hover:text-primary transition-colors" href="https://www.instagram.com/aprilchomlack.realestate/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-2xl">photo_camera</span></a>
+<a aria-label="Email April" class="text-primary/40 hover:text-primary transition-colors" href="mailto:april@chomlackrealestate.com"><span class="material-symbols-outlined text-2xl">mail</span></a>
+<a aria-label="Call April" class="text-primary/40 hover:text-primary transition-colors" href="tel:+16045550123"><span class="material-symbols-outlined text-2xl">call</span></a>
+</div>
+<div class="pt-8 border-t border-slate-100">
+<p class="text-[10px] text-slate-400 uppercase tracking-widest leading-loose">
+                    © 2024 April Chomlack Real Estate. <br/>
+                    Each Office Is Independently Owned And Operated. <br/>
+                    Century 21 Creekside Realty Ltd.
+                </p>
+</div>
+</div>
+</footer>
+</main>
+<script>
+  (function () {
+    var menuToggle = document.getElementById("menu-toggle");
+    var mobileMenu = document.getElementById("mobile-menu");
+    var mobileOverlay = document.getElementById("mobile-menu-overlay");
+    var menuLinks = document.querySelectorAll(".mobile-menu-link");
+    var valuationForm = document.getElementById("valuation-form");
+    var valuationSuccess = document.getElementById("valuation-success");
+
+    function closeMenu() {
+      if (!mobileMenu || !mobileOverlay || !menuToggle) return;
+      mobileOverlay.classList.add("hidden");
+      mobileMenu.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
+      setTimeout(function () {
+        mobileMenu.classList.add("hidden");
+      }, 180);
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+
+    function openMenu() {
+      if (!mobileMenu || !mobileOverlay || !menuToggle) return;
+      mobileMenu.classList.remove("hidden");
+      mobileOverlay.classList.remove("hidden");
+      requestAnimationFrame(function () {
+        mobileMenu.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
+      });
+      menuToggle.setAttribute("aria-expanded", "true");
+    }
+
+    if (menuToggle) {
+      menuToggle.addEventListener("click", function () {
+        if (mobileMenu.classList.contains("hidden")) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+    }
+
+    if (mobileOverlay) {
+      mobileOverlay.addEventListener("click", closeMenu);
+    }
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!mobileMenu || !menuToggle) return;
+      var clickedInsideMenu = mobileMenu.contains(event.target);
+      var clickedToggle = menuToggle.contains(event.target);
+      if (!clickedInsideMenu && !clickedToggle) {
+        closeMenu();
+      }
+    });
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        closeMenu();
+      });
+    });
+
+    if (valuationForm && valuationSuccess) {
+      valuationForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        valuationSuccess.classList.remove("hidden");
+        valuationForm.reset();
+      });
+    }
+  })();
+</script>
+</body></html>
